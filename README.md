@@ -185,11 +185,11 @@ Request:
     keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
     testresults : [
                     {
-                      trsid : 3 ,
+                      trsid : 8 ,
                       status: "pass"
                     },
                     {
-                      trsid : 4 ,
+                      trsid : 9 ,
                       status: "fail"
                     }
                  ]
@@ -198,11 +198,11 @@ Response:
 {
     [
      {
-       trid : 3 ,
+       trid : 8 ,
        updatestepresult: "update teststepresult successfully!"
      },
      {
-       trid : 4 ,
+       trid : 9 ,
        updatestepresult: "update teststepresult successfully!"
      }
     ]
