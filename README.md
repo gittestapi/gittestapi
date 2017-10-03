@@ -7,7 +7,7 @@ Database:https://github.com/gittestapi/gittest/blob/master/mysql.txt
 
 Code sample:https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-php/
 
-Get KeyToken
+## Get KeyToken
 ```
 Action: Get
 url: http://api.gittest.com/api.php/getkeytoken
@@ -22,6 +22,7 @@ value online checker:http://www.miraclesalad.com/webtools/sha256.php
 
 php function calling: http://php.net/manual/en/function.hash.php
 
+## getmytestplans
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/getmytestplans
@@ -45,6 +46,7 @@ Response:
 }
 ```
 
+## gettestresults
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/gettestresults/{$tpid}
@@ -68,6 +70,7 @@ Response:
 }
 ```
 
+## updatetestresult
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updatetestresult/{$trid}
@@ -86,6 +89,7 @@ Response:
 }
 ```
 
+## updatetestresults
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updatetestresults
@@ -119,16 +123,19 @@ Response:
 }
 ```
 
+## getmyteststepresults
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/getmyteststepresults
 ```
 
+## updateteststepresult
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updateteststepresult/{tsrid}
 ```
 
+## updateteststepresults
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updateteststepresults
