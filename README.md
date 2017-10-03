@@ -9,8 +9,17 @@ Code sample:https://www.leaseweb.com/labs/2015/10/creating-a-simple-rest-api-in-
 
 ## Get KeyToken
 ```
-Action: Get
+Action: Post
 url: http://api.gittest.com/api.php/getkeytoken
+Request:
+{
+    username : "user001",
+    password : "pass"
+}
+Response:
+{
+    keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
+}
 ```
 Note: keytoken is sha512(md5(username+password))
 
