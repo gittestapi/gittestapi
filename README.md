@@ -69,11 +69,11 @@ Response:
     [
      {
        trid : 3 ,
-       tctitle: "this is test title 003 in test plan 001"
+       tctitle: "this is test case title 003 in test plan 001"
      }
      {
        trid : 4 ,
-       tctitle: "this is test title 004 in test plan 001"
+       tctitle: "this is test case title 004 in test plan 001"
      }
     ]
 }
@@ -87,7 +87,7 @@ Request:
 {
     username : "user001",
     keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
-    testresults : {
+    testresult : {
                       status: "pass"
                   }
 }
@@ -136,18 +136,77 @@ Response:
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/getmyteststepresults
+Request:
+{
+    username : "user001",
+    keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
+}
+Response:
+{
+    [
+     {
+       tsrid : 8 ,
+       tsrcontent: "this is step001 of test case title 003 in test plan 001"
+     }
+     {
+       tsrid : 9 ,
+       tsrcontent: "this is step002 of test case title 004 in test plan 001"
+     }
+    ]
+}
 ```
 
 ## updateteststepresult
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updateteststepresult/{tsrid}
+Request:
+{
+    username : "user001",
+    keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
+    teststepresult : {
+                      status: "pass"
+                  }
+}
+Response:
+{
+    trsid : 8 ,
+    updatestepresult: "update teststepresult successfully!"
+}
 ```
 
 ## updateteststepresults
 ```
 Aciton: Post
 url: http://api.gittest.com/api.php/updateteststepresults
+Request:
+{
+    username : "user001",
+    keytoken : "be4b422b980b2987ad74efca766a7db3d8a13ee87a7f24185d255ccd1b4f8706"
+    testresults : [
+                    {
+                      trsid : 3 ,
+                      status: "pass"
+                    }
+                    {
+                      trsid : 4 ,
+                      status: "fail"
+                    }
+                 ]
+}
+Response:
+{
+    [
+     {
+       trid : 3 ,
+       updatestepresult: "update teststepresult successfully!"
+     }
+     {
+       trid : 4 ,
+       updatestepresult: "update teststepresult successfully!"
+     }
+    ]
+}
 ```
 
 # The easy fast way is using the sample way as following:
