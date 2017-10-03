@@ -46,7 +46,7 @@ Response:
      {
        tpid : 1 ,
        tpname: "my test plan 001"
-     }
+     },
      {
        tpid : 6 ,
        tpname: "my test plan 006"
@@ -70,7 +70,7 @@ Response:
      {
        trid : 3 ,
        tctitle: "this is test case title 003 in test plan 001"
-     }
+     },
      {
        trid : 4 ,
        tctitle: "this is test case title 004 in test plan 001"
@@ -110,7 +110,7 @@ Request:
                     {
                       trid : 3 ,
                       status: "pass"
-                    }
+                    },
                     {
                       trid : 4 ,
                       status: "fail"
@@ -123,7 +123,7 @@ Response:
      {
        trid : 3 ,
        updateresult: "update testresult successfully!"
-     }
+     },
      {
        trid : 4 ,
        updateresult: "update testresult successfully!"
@@ -147,7 +147,7 @@ Response:
      {
        tsrid : 8 ,
        tsrcontent: "this is step001 of test case title 003 in test plan 001"
-     }
+     },
      {
        tsrid : 9 ,
        tsrcontent: "this is step002 of test case title 004 in test plan 001"
@@ -187,7 +187,7 @@ Request:
                     {
                       trsid : 3 ,
                       status: "pass"
-                    }
+                    },
                     {
                       trsid : 4 ,
                       status: "fail"
@@ -200,7 +200,7 @@ Response:
      {
        trid : 3 ,
        updatestepresult: "update teststepresult successfully!"
-     }
+     },
      {
        trid : 4 ,
        updatestepresult: "update teststepresult successfully!"
