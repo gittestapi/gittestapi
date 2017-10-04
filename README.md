@@ -135,7 +135,7 @@ Response:
 ## getmyteststepresults
 ```
 Aciton: Post
-url: http://api.gittest.com/api.php/getmyteststepresults
+url: http://api.gittest.com/api.php/getmyteststepresults/{trid}
 Request:
 {
     username : "user001",
